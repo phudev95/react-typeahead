@@ -1,6 +1,7 @@
 var React = require('react');
 var classNames = require('classnames');
 
+
 /**
  * A single option within the TypeaheadSelector
  */
@@ -9,9 +10,6 @@ var TypeaheadOption = React.createClass({
         customClasses: React.PropTypes.object,
         customValue: React.PropTypes.string,
         onClick: React.PropTypes.func,
-        // old: children: React.PropTypes.string
-        // output: <b>lov</b>e
-        // [<b>lov</b>, e, ...]
         children: React.PropTypes.oneOfType([
             React.PropTypes.element,
             React.PropTypes.string,
