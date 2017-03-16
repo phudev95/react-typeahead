@@ -11,9 +11,11 @@ var TypeaheadOption = React.createClass({
         onClick: React.PropTypes.func,
         // old: children: React.PropTypes.string
         // output: <b>lov</b>e
+        // [<b>lov</b>, e, ...]
         children: React.PropTypes.oneOfType([
             React.PropTypes.element,
-            React.PropTypes.string
+            React.PropTypes.string,
+            React.PropTypes.array
         ]),
         hover: React.PropTypes.bool
     },
